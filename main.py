@@ -54,6 +54,7 @@ print()
 print(
     "now you are 16 and you are a knight. your dream is working for the king protecting the castle"
 )
+print()
 print("then out of nowhere a horde of monsters appear")
 choice4 = int(
     input(
@@ -64,9 +65,9 @@ t.sleep(choice4 / (strength * strength))
 rp += choice4
 if choice4 >= 10:
     cash += 100
-print(
+    print(
     "king: you have fought bravely young knight you might have the power to protect my daughter have $100"
-)
+    )
 print("a few months later you start you form a friendship with the princess")
 print()
 print(
@@ -74,20 +75,20 @@ print(
 )
 print()
 choice5 = input(
-    "do you want to go to korok forest or stay and work on the guardians and train (go/stay)"
+    "(go/stay)"
 )
 
 if choice5 == "go" and strength > 2:
     print(
         "you went to the korok forest which was infested with monsters but you killed them all then you got to	 the master sword but there was astor which wanted to kill the princess malice type of your allys appeared and broke your sword you get launched back and when they malice allys were about to attack the princess the master sword woke up and sealed the malice you look back and you try to pull the sword it was hurting your hand right when you were about to give up it popped out"
     )
-elif choice5 == "go" and strength < 2:
+elif choice5 == "go" and strength < 2 or intellegence < 2:
     print(
         "you went to the korok forest and the monsters came and overpowered you."
     )
-	t.sleep(5)
-	print("YOU DIED")
-	print("RIP")
+    t.sleep(5)
+    print("YOU DIED")
+    print("RIP")
 if choice5 == "stay" and intellegence > 4:
     print(
         "you work on guardians while your allys went to korok forest you studied them one turned on you think what if one gets currupted so you expirmented on one of the cores you pick up some malice and some chemicals and the chemicals desolved the malice and you fused the chemicals you made to the core and you pour some malice on and it deflected it you put the core back in the guardian "
