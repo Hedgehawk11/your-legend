@@ -37,7 +37,7 @@ remember1 = choice1
 choice3 = 'yes'
 if choice2 == "yes":
     while choice1 == "sword" and choice3 == "yes":
-        t.sleep(5/strength)
+        t.sleep(5/(strength+intellegence)/1.5)
         strength += 0.25
         intellegence += 5
         choice3 = input("\u001b[34mdo you want to train again ")
@@ -124,6 +124,7 @@ elif choice5 == "stay" and intellegence > 10 and strength < 2:
   print("RIP")
   print("re-run the program and get more intellegence or strength hint:you should select stay and have enough intellegence and strength")
   9 ** 9 ** 9
+print()
 print('1 month later')
 choice6 = input("at castle: king:" + name + " do you accept being the princesses apointed knight? (yes or no this affects the end)")
 if choice6 == "yes":
