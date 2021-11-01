@@ -1,10 +1,11 @@
-import random as r
+import random as r #random
 import time as t
+import sys as sus #program stopper
 var = 0
 strength = 1
 rp = 0
 cash = 0
-intellegence = 0
+intellegence = 10
 is_alive = 1
 numMonsters = r.randint(1,1000)
 name = input("\u001b[35madd your name so we can use it later ")
@@ -44,7 +45,8 @@ if choice2 == "yes" or choice2=="" or choice2=="y":
         choice3 = input("\u001b[34mdo you want to train again (also you could hit enter)")
 if choice2 != "yes" or choice2 !="" or choice2!="y":
     choice1 = ""
-while choice1 == "training station" and choice3 == "yes" or choice3=="":
+if choice2 == "yes" or choice2=="" or choice2=="y":
+  while choice1 == "training station" and choice3 == "yes" or choice3=="" or choice3=="y":
     t.sleep(2/(((strength+intellegence)/3)+1))
     strength += 0.1
     intellegence += 0.5
@@ -94,6 +96,7 @@ elif choice5 == "go" and strength < 2 or intellegence < 2:
     print("\u001b[31mYOU DIED")
     print("\u001b[32mRIP")
     print("\u001b[33mre- run the program and get stronger to defeat the monsters hint: train 10 times for training station train 4 times for sword")
+    sus.exit()
     9**9**9
 elif choice5 == "stay" and intellegence > 10:
     print(
@@ -112,6 +115,7 @@ elif choice5 == "stay" and intellegence < 4 and strength < 2:
     print("\u001b[33mYOU DIED")
     print("\u001b[32mRIP")
     print("\u001b[31mre- run the program to get more intellegence or strength hint: choose sword and train 4 times")
+    sus.exit()
     9 ** 9 ** 9
 if choice5 == "stay" and intellegence > 10 and strength > 2:
     print(
@@ -124,6 +128,7 @@ elif choice5 == "stay" and intellegence > 10 and strength < 2:
   print("YOU DIED")
   print("RIP")
   print("re-run the program and get more intellegence or strength hint:you should select stay and have enough intellegence and strength")
+  sus.exit()
   9 ** 9 ** 9
 print()
 print('1 month later')
@@ -145,3 +150,10 @@ elif choice7=="go":
   elif choice8 == "kill":
     print('you kill ',numMonsters,'and get ', numMonsters, 'money')
     cash += numMonsters
+  elif choice8 == "kill" and strength > 5:
+    print("then the lynel appears you try to kill the lynel the master sword woke up again and the lynel charges but you pary it sending it back you tell the princess to run and you kill the lynel")
+  elif choice8 == "kill" and strength < 5:
+    print("YOU DIED")
+    print("RIP")
+    print("re-run the program and upgrade your strength hint: hold enter when training it's OP")
+    sus.exit()
