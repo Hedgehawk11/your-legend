@@ -1,6 +1,6 @@
 import random as r #random
 import time as t
-import sys as sus #program stopper
+import sys as stop #program stopper
 var = 0
 strength = 1
 rp = 0
@@ -96,8 +96,7 @@ elif choice5 == "go" and strength < 2 or intellegence < 2:
     print("\u001b[31mYOU DIED")
     print("\u001b[32mRIP")
     print("\u001b[33mre- run the program and get stronger to defeat the monsters hint: train 10 times for training station train 4 times for sword")
-    sus.exit()
-    9**9**9
+    stop.exit()
 elif choice5 == "stay" and intellegence > 10:
     print(
         "\u001b[34myou work on guardians while your allys went to korok forest you studied them one turned on you think what if one gets currupted so you expirmented on one of the cores you pick up some malice and some chemicals and the chemicals desolved the malice and you fused the chemicals you made to the core and you pour some malice on and it deflected it you put the core back in the guardian "
@@ -115,8 +114,6 @@ elif choice5 == "stay" and intellegence < 4 and strength < 2:
     print("\u001b[33mYOU DIED")
     print("\u001b[32mRIP")
     print("\u001b[31mre- run the program to get more intellegence or strength hint: choose sword and train 4 times")
-    sus.exit()
-    9 ** 9 ** 9
 if choice5 == "stay" and intellegence > 10 and strength > 2:
     print(
         "\u001b[32myour allys came back from the korok forest they cleared the forest and barely beat astor and now the way to the master sword is cleared"
@@ -128,8 +125,7 @@ elif choice5 == "stay" and intellegence > 10 and strength < 2:
   print("YOU DIED")
   print("RIP")
   print("re-run the program and get more intellegence or strength hint:you should select stay and have enough intellegence and strength")
-  sus.exit()
-  9 ** 9 ** 9
+  stop.exit()
 print()
 print('1 month later')
 choice6 = input("at castle: king: " + name + " do you accept being the princesses apointed knight? (yes or no this affects the end)")
@@ -146,14 +142,15 @@ elif choice7=="go":
   print("you go to the spring of wisdom to pray to awaken her sealing power a bunch of monsters appear. There are",numMonsters,"monsters")
   choice8 = input('do you want to run or kill them(run/kill)')
   if choice8 == "run" and strength > 5:
-    print("You and the princess run away halfway down the mountain a  lynel appears you try to kill the lynel the master sword woke up again and the lynel charges but you pary it sending it back you tell the princess to run and you kill the lynel")
+    print("You and the princess run away halfway down the mountain a  lynel appears you try to kill the lynel the master sword woke up again and the lynel charges but you pary it sending it back you tell the princess to run and and the lynel brought out its sword and the fight began it swung and you flurried it you did not even know you could do that everything became slow and you rush up to the lynel and hit it 5 times you jump back it starts to shoot fire but you shot an arrow at its face and knocked it down you rush and ride it stabing it in the back as it roars in defeat")
   elif choice8 == "kill":
     print('you kill ',numMonsters,'and get ', numMonsters, 'money')
     cash += numMonsters
   elif choice8 == "kill" and strength > 5:
-    print("then the lynel appears you try to kill the lynel the master sword woke up again and the lynel charges but you pary it sending it back you tell the princess to run and you kill the lynel")
+    print("then the lynel appears you try to kill the lynel the master sword woke up again and the lynel charges but you pary it sending it back you tell the princess to run and the lynel brought out its sword and the fight began it swung and you flurried it you did not even know you could do that everything became slow and you rush up to the lynel and hit it 5 times you jump back it starts to shoot fire but you shot an arrow at its face and knocked it down you rush and ride it stabing it in the back as it roars in defeat")
   elif choice8 == "kill" and strength < 5:
     print("YOU DIED")
     print("RIP")
     print("re-run the program and upgrade your strength hint: hold enter when training it's OP")
-    sus.exit()
+    stop.exit()
+print("you")
