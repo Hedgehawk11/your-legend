@@ -45,14 +45,16 @@ if choice2 == "yes" or choice2=="" or choice2=="y":
         choice3 = input("\u001b[34mdo you want to train again (also you could hit enter)")
 if choice2 != "yes" or choice2 !="" or choice2!="y":
     choice1 = ""
-if choice2 == "yes" or choice2=="" or choice2=="y":
+
+if choice2 == "yes" or choice2 == "" or choice2 == "y":
   while choice1 == "training station" and choice3 == "yes" or choice3=="" or choice3=="y":
     t.sleep(2/(((strength+intellegence)/3)+1))
     strength += 0.1
     intellegence += 0.5
     choice3 = input("\u001b[33mdo you want to train again ")
-if choice3 != "yes":
+if choice3 != "yes" or choice3 != 'y' or choice3 != '':
     choice1 = ""
+
 print()
 print(
     "\u001b[32mtommorow is the princess's birthday and you get to meet the princess because of your dad"
@@ -141,16 +143,19 @@ if choice7 == "stay":
 elif choice7=="go":
   print("you go to the spring of wisdom to pray to awaken her sealing power a bunch of monsters appear. There are",numMonsters,"monsters")
   choice8 = input('do you want to run or kill them(run/kill)')
-  if choice8 == "run" and strength > 5:
-    print("You and the princess run away halfway down the mountain a  lynel appears you try to kill the lynel the master sword woke up again and the lynel charges but you pary it sending it back you tell the princess to run and and the lynel brought out its sword and the fight began it swung and you flurried it you did not even know you could do that everything became slow and you rush up to the lynel and hit it 5 times you jump back it starts to shoot fire but you shot an arrow at its face and knocked it down you rush and ride it stabing it in the back as it roars in defeat")
+  if strength >= 12:
+    print("You and the princess run away halfway down the mountain a  lynel appears you try to kill the lynel the master sword woke up again and the lynel charges but you pary it sending it back you tell the princess to run and, the lynel brought out its weapon, and the fight began it swung and you flurried it you did not even know you could do that everything became slow and you rush up to the lynel and hit it five times you jump back it starts to shoot fire but, you shot an arrow at its face and knocked it down you rush and ride it stabbing it in the back as it roars in defeat")
   elif choice8 == "kill":
     print('you kill ',numMonsters,'and get ', numMonsters, 'money')
     cash += numMonsters
-  elif choice8 == "kill" and strength > 5:
-    print("then the lynel appears you try to kill the lynel the master sword woke up again and the lynel charges but you pary it sending it back you tell the princess to run and the lynel brought out its sword and the fight began it swung and you flurried it you did not even know you could do that everything became slow and you rush up to the lynel and hit it 5 times you jump back it starts to shoot fire but you shot an arrow at its face and knocked it down you rush and ride it stabing it in the back as it roars in defeat")
-  elif choice8 == "kill" and strength < 5:
+  elif choice8 == "kill" and strength < 12:
     print("YOU DIED")
     print("RIP")
     print("re-run the program and upgrade your strength hint: hold enter when training it's OP")
     stop.exit()
-print("you")
+print("you head to the princess which was hiding behind a rock you tell her the lynel is dead you and the princess  walk to the  castle and then BOOM there was an earthquake then you known you ran out of time the calimity is here")
+if choice5 == "stay" and intellegence > 4:
+    print("you run to the castle the guardians fighting the monsters and protecting the castle the calmity trying to corrupt the but since you figured the calamity will try to currupt them the guardians are imune to the malice")
+print()
+print('the king sees that the monsters are comeing from the same place... the center of the earth')
+print('[insert dun dun dunnnnnnnnnn]')
