@@ -7,6 +7,7 @@ rp = 0
 cash = 0
 intellegence = 10
 is_alive = 1
+choice2 = 'yes'
 numMonsters = r.randint(1,1000)
 name = input("\u001b[35madd your name so we can use it later ")
 #add color "\u001b[??m"
@@ -43,16 +44,15 @@ if choice2 == "yes" or choice2=="" or choice2=="y":
         strength += 0.25
         intellegence += 5
         choice3 = input("\u001b[34mdo you want to train again (also you could hit enter)")
-if choice2 != "yes" or choice2 !="" or choice2!="y":
+elif choice2 != "yes" or choice2 !="" or choice2!="y":
     choice1 = ""
-
-if choice2 == "yes" or choice2 == "" or choice2 == "y":
-  while choice1 == "training station" and choice3 == "yes" or choice3=="" or choice3=="y":
-    t.sleep(2/(((strength+intellegence)/3)+1))
-    strength += 0.1
-    intellegence += 0.5
-    choice3 = input("\u001b[33mdo you want to train again ")
-if choice3 != "yes" or choice3 != 'y' or choice3 != '':
+if choice2 == "yes" or choice2=="" or choice2=="y":
+    while choice1 == "training station" and choice3 == "yes" or choice3=='' or choice3 =='y':
+        t.sleep(5/(((strength+intellegence)/3)+1))
+        strength += 0.25
+        intellegence += 5
+        choice3 = input("\u001b[34mdo you want to train again (also you could hit enter)")
+elif choice2 != "yes" or choice2 !="" or choice2!="y":
     choice1 = ""
 
 print()
@@ -139,23 +139,73 @@ print()
 print("\u001b[36mit's been 5 months and still the princess could not awaken her power they plan to go to the spring of wisdom on her birthday to see if she can awaken it there do you go with the princess + 5 friendship or stay and work on the devine beast + 6 intellegence")
 choice7 = input("(go/stay) ")
 if choice7 == "stay":
-  print("you did the same thing you did with the guardians but the cores are HUGE so you will need more chemicals you finished before  the princess came back so you rushed to the spring of wisdom and the pricess was there praying tin order to awaken the power you pat her shoulder and she stood up you supported her and she could not awaken her power and if she does not awaken her sealing power the world will come to ruin")
+  print("you did the same thing you did with the guardians but the cores are HUGE so you will need more chemicals you finished before  the princess came back so you rushed to the spring of wisdom and the pricess was there praying in order to awaken the power you pat her shoulder and she stood up you supported her and she could not awaken her power and if she does not awaken her sealing power the world will come to ruin")
 elif choice7=="go":
   print("you go to the spring of wisdom to pray to awaken her sealing power a bunch of monsters appear. There are",numMonsters,"monsters")
-  choice8 = input('do you want to run or kill them(run/kill)')
-  if strength >= 12:
+choice8 = input('do you want to run or kill them(run/kill)')
+if strength >= 12:
     print("You and the princess run away halfway down the mountain a  lynel appears you try to kill the lynel the master sword woke up again and the lynel charges but you pary it sending it back you tell the princess to run and, the lynel brought out its weapon, and the fight began it swung and you flurried it you did not even know you could do that everything became slow and you rush up to the lynel and hit it five times you jump back it starts to shoot fire but, you shot an arrow at its face and knocked it down you rush and ride it stabbing it in the back as it roars in defeat")
-  elif choice8 == "kill":
+elif choice8 == "kill":
     print('you kill ',numMonsters,'and get ', numMonsters, 'money')
+    print("a  lynel appears you try to kill the lynel the master sword woke up again and the lynel charges but you pary it sending it back you tell the princess to run and, the lynel brought out its weapon, and the fight began it swung and you flurried it you did not even know you could do that everything became slow and you rush up to the lynel and hit it five times you jump back it starts to shoot fire but, you shot an arrow at its face and knocked it down you rush and ride it stabbing it in the back as it roars in defeat")
     cash += numMonsters
-  elif choice8 == "kill" and strength < 12:
+elif choice8 == "kill" and strength < 12:
     print("YOU DIED")
     print("RIP")
     print("re-run the program and upgrade your strength hint: hold enter when training it's OP")
     stop.exit()
 print("you head to the princess which was hiding behind a rock you tell her the lynel is dead you and the princess  walk to the  castle and then BOOM there was an earthquake then you known you ran out of time the calimity is here")
 if choice5 == "stay" and intellegence > 4:
-    print("you run to the castle the guardians fighting the monsters and protecting the castle the calmity trying to corrupt the but since you figured the calamity will try to currupt them the guardians are imune to the malice")
+  print()
+  print("you run to the castle the guardians fighting the monsters and protecting the castle the calmity trying to corrupt the but since you figured the calamity will try to currupt them the guardians are imune to the malice")
 print()
-print('the king sees that the monsters are comeing from the same place... the center of the earth')
+print('the king sees that the monsters are coming from the same place... the center of the earth')
 print('[insert dun dun dunnnnnnnnnn]')
+if choice5 == "go" or choice5 == "stay" and intellegence < 4 and strength > 2:
+  print("you run from the guardians as they shoot you with lasers and then BOOM the laser hit your sheild and it bounced back and hit the guardian in the eye then you notice you can send back the lasers with a pary you kill 10 guardians when you start to get weak the princess saved you by awakening her power and killing all the guardians")
+  print()
+  print('the monsters also rickroll you')
+if choice7 == "go":
+  print("the devine beasts are fighting being currupted and the champions are fighting too")
+if choice7 == "stay" and choice5 == "stay":
+  print("the devine beasts are ready to attack the guardians are holding the monsters back you head inside the castle then calamity ganon appears as you chase it to the sanctum you fight ganon the princess awakens her power to kill ganon")
+  print("ONE HOUR LATER")
+  t.sleep(5)
+  print("Ganon now weak you give him the final blow cutting him right through the middle you give the princess a nod so she can seal him away")
+  print()
+  print("now with ganon sealed the kingdom can be in peace")
+  if choice6 == "yes":
+    print("you and the princess are now friends you guys hang out almost everyday")
+  elif choice6 == "no":
+    print("after saving the kingdom you two never saw each other again")
+  print()
+  t.sleep(5)
+  print("THE END")
+if choice7 == "go":
+  print("you go to the devine beasts in order to save the champions that are weak")
+  print()
+  t.sleep(5)
+  print("you save the zora champion first")
+  t.sleep(5) 
+  print ("then you save the goron champion")
+  t.sleep(5) 
+  print("and after that you save the gorudo champion") 
+  t.sleep(5)
+  print("and finally you save the rito champion")
+  t.sleep(5)
+  print("now with the champions freed everyone can concentrate thier power on the divine beasts")
+  print()
+  print('now with the beasts killed the king gives you 2 tasks that you must choose from')
+  if choice6 == 'yes':
+    dependentchoice1 = 0
+    print('task 1: go to the earth\'s core and block the monsters off')
+    print()
+    print('task 2: SAVE THE PRINCESS ')
+    dependentchoice1 = int(input('King: HERE YE HERE YE the knight must choose from 2 tasks '))
+  else:
+    print('you choose the #2 task')
+print()
+print("you succeed in your task and all later quests and being  the princess's knight")
+t.sleep(10)
+print('BUT WAIT THERE\'S MORE)
+t.sleep(5)
