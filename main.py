@@ -9,7 +9,15 @@ intellegence = 10
 is_alive = 1
 choice2 = 'yes'
 numMonsters = r.randint(1,1000)
-name = input("\u001b[35madd your name so we can use it later ")
+t.sleep(5)
+print('Dbates, Carlos, and Nathan Present')
+t.sleep(5)
+print('233 lines of code')
+t.sleep(5)
+print('YOUR LEGEND')
+t.sleep(5)
+print('\n' * 100)
+name = input("\u001b[35madd your name so we can use it later (NOT SAVED)")
 #add color "\u001b[??m"
 print(
     "\u001b[34myou are young and you are walking down castle town and you stumble apon a newspaper. 'KNIGHT SAVES CASTLE TOWN FROM MONSTERS' the newspaper says, it reminds you of your dream of being a knight when you grow up"
@@ -66,16 +74,20 @@ print(
 print()
 print("\u001b[32mthen out of nowhere a horde of monsters appear")
 print("\u001b[33mhow many monsters do you kill (the more you kill, the longer it will take and the more money you get and the more credit) (it will take you",1000/(((strength+intellegence)/3)+1),"seconds to kill 1000")
-choice4 = int(input())
+choice4 = input()
+try:
+  choice4=int(choice4)
+except ValueError:
+  pass
     
-    
+choice4=int(input())
 
 t.sleep(choice4/(((strength+intellegence)/3)+1))
 rp += choice4
 if choice4 >= 10:
-    cash += choice4*10
-    print(
-        "\u001b[34mking: you have fought bravely young knight you might have the power to protect my daughter have $"+str(cash)
+  cash += choice4*10
+  print(
+    "\u001b[34mking: you have fought bravely young knight you might have the power to protect my daughter have $"+str(cash)
     )
 print("\u001b[35ma few months later you start you form a friendship with the princess")
 print()
