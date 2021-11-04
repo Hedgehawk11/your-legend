@@ -207,5 +207,20 @@ if choice7 == "go":
 print()
 print("you succeed in your task and all later quests and being  the princess's knight")
 t.sleep(10)
-print('BUT WAIT THERE\'S MORE)
+print('BUT WAIT THERE\'S MORE')
 t.sleep(5)
+
+print("the devine beasts are ready to attack the guardians are holding the monsters back you head inside the castle then calamity ganon appears as you chase it to the sanctum you fight ganon the princess awakens her power to kill ganon")
+print("ONE HOUR LATER")
+t.sleep(5)
+print("Ganon now weak you give him the final blow cutting him right through the middle you give theprincess a nod so she can seal him away")
+print()
+print("now with ganon sealed the kingdom can be in peace")
+print()
+if choice6 == "yes":
+  print("you and the princess are now friends you guys hang out almost everyday")
+elif choice6 == "no":
+  print("after saving the kingdom you two never saw each other again")
+print()
+t.sleep(5)
+print("THE END")
