@@ -207,5 +207,5 @@ if choice7 == "go":
 print()
 print("you succeed in your task and all later quests and being  the princess's knight")
 t.sleep(10)
-print('BUT WAIT THERE\'S MORE)
+print('BUT WAIT THERE\'S MORE')
 t.sleep(5)
